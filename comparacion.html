@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Etiquetas Obsoletas vs. Modernas</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background: #f9f9f9; color: #333; line-height: 1.6; }
+    header {
+      background: #2c3e50; color: white; padding: 2rem 1rem; text-align: center;
+    }
+    nav {
+      background: #2c3e50; padding: 0.8rem;
+    }
+    nav ul {
+      list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;
+    }
+    nav a {
+      color: #ecf0f1; text-decoration: none; font-weight: 500; padding: 0.4rem 0.8rem;
+      border-radius: 4px; transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #34495e;
+    }
+    main {
+      max-width: 900px; margin: 2rem auto; padding: 0 1.5rem;
+    }
+    section {
+      background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    h1 { font-size: 2rem; margin-bottom: 1rem; }
+    h2 { color: #2c3e50; margin: 1.2rem 0 0.8rem; }
+    table {
+      width: 100%; border-collapse: collapse; margin-top: 1rem;
+    }
+    th, td {
+      padding: 0.8rem; text-align: left; border: 1px solid #ddd;
+    }
+    th {
+      background: #3498db; color: white;
+    }
+    tr:nth-child(even) {
+      background: #f2f2f2;
+    }
+    code {
+      background: #eee; padding: 0.2rem 0.4rem; border-radius: 3px;
+    }
+    footer {
+      text-align: center; padding: 1.5rem; color: #7f8c8d; font-size: 0.9rem;
+      border-top: 1px solid #eee; margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Etiquetas: Antes y Ahora</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="evolucion.html">Línea del tiempo</a></li>
+      <li><a href="comparacion.html">Etiquetas: antes y ahora</a></li>
+      <li><a href="ventajas.html">Ventajas de HTML5</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Comparación de etiquetas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Obsoletas (HTML 4)</th>
+            <th>Modernas (HTML5)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>&lt;font&gt;</code></td>
+            <td>CSS (estilos externos)</td>
+          </tr>
+          <tr>
+            <td><code>&lt;center&gt;</code></td>
+            <td><code>&lt;div&gt;</code> + CSS</td>
+          </tr>
+          <tr>
+            <td><code>&lt;frame&gt;, &lt;frameset&gt;</code></td>
+            <td><code>&lt;iframe&gt;</code> o diseño responsivo</td>
+          </tr>
+          <tr>
+            <td><code>&lt;b&gt;, &lt;i&gt;</code> (sin semántica)</td>
+            <td><code>&lt;strong&gt;, &lt;em&gt;</code> o <code>&lt;mark&gt;</code></td>
+          </tr>
+          <tr>
+            <td><code>&lt;div id="header"&gt;</code></td>
+            <td><code>&lt;header&gt;</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 – Proyecto Educativo UTPL</p>
+  </footer>
+</body>
+</html>
